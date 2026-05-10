@@ -216,7 +216,7 @@ a{
   font-family:"Share Tech Mono",monospace;
 }
 
-.load-fictional{
+.load-Non-Fictional{
   margin-top:28px;
   font-size:12px;
   color:#8a8a8a;
@@ -274,7 +274,7 @@ a{
   letter-spacing:1px;
 }
 
-.badge-fictional{
+.badge-Non-Fictional{
   background:#171717;
   border:1px solid #2a2a2a;
 }
@@ -404,7 +404,7 @@ a{
   font-weight:700;
 }
 
-.hero-fictional-notice{
+.hero-Non-Fictional-notice{
   margin-top:32px;
   background:rgba(255,0,0,.08);
   border:1px solid rgba(255,0,0,.22);
