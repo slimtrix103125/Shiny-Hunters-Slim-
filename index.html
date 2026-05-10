@@ -3,604 +3,540 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090909">
+<meta name="color-scheme" content="dark">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="robots" content="noindex, nofollow">
-<title>⚠ INCIDENT REPORT — VORTEX GAMING NETWORK [FICTIONAL]</title>
+
+<meta http-equiv="Content-Security-Policy"
+content="
+default-src 'self';
+style-src 'self' https://fonts.googleapis.com 'unsafe-inline';
+font-src https://fonts.gstatic.com;
+script-src 'self' 'unsafe-inline';
+img-src 'self' data:;
+">
+
+<title>VORTEXSEC Incident Simulation Portal</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="loading">
 
-<div class="scanlines"></div>
-<canvas id="matrix-canvas"></canvas>
+<div class="scanlines" aria-hidden="true"></div>
+<canvas id="matrix-canvas" aria-hidden="true"></canvas>
 
 <div id="loading-screen">
   <div class="load-wrap">
+
     <div class="load-icon-ring">
       <div class="load-ring lr1"></div>
       <div class="load-ring lr2"></div>
-      <div class="load-icon">⚠</div>
+
+      <div class="load-icon">
+        ⚠
+      </div>
     </div>
-    <div class="load-title">BREACH DETECTED</div>
-    <div class="load-subtitle">VORTEX GAMING NETWORK — INCIDENT REPORT v2.1 — FICTIONAL SIMULATION</div>
+
+    <div class="load-title">
+      INCIDENT INITIALIZATION
+    </div>
+
+    <div class="load-subtitle">
+      VORTEXSEC INCIDENT SIMULATION PORTAL
+    </div>
+
     <div class="load-bar-wrap">
       <div class="load-bar" id="load-bar"></div>
       <div class="load-bar-glow" id="load-bar-glow"></div>
     </div>
-    <div class="load-status" id="load-status">INITIALIZING SECURE CHANNEL...</div>
+
+    <div class="load-status" id="load-status">
+      INITIALIZING SECURE CHANNEL...
+    </div>
+
     <div class="load-hex" id="load-hex"></div>
-    <div class="load-fictional">⚠ FICTIONAL SIMULATION — ALL DATA IS SYNTHETIC — CYBERSECURITY AWARENESS PROJECT</div>
+
+    <div class="load-fictional">
+      SYNTHETIC DATASET • CYBERSECURITY AWARENESS PROJECT • FICTIONAL SIMULATION
+    </div>
+
   </div>
 </div>
 
 <div id="app" class="hidden">
 
-  <nav class="navbar">
-    <div class="nav-logo">
-      <span class="nav-logo-hex">◈</span>
-      <span class="nav-logo-text">VORTEX<span class="red-text">SEC</span></span>
+<nav class="navbar" role="navigation">
+
+  <div class="nav-logo">
+    <span class="nav-logo-hex">◈</span>
+    <span class="nav-logo-text">
+      VORTEX<span class="red-text">SEC</span>
+    </span>
+  </div>
+
+  <div class="nav-center">
+    <span class="nav-tag">
+      INCIDENT COMMAND PORTAL
+    </span>
+  </div>
+
+  <div class="nav-meta">
+    <span class="nav-badge badge-fictional">
+      ◆ FICTIONAL
+    </span>
+
+    <span class="nav-badge badge-red blink-badge">
+      ⚠ FORENSIC REVIEW
+    </span>
+
+    <span class="nav-id">
+      INC-2025-0314-CRIT
+    </span>
+  </div>
+
+</nav>
+
+<div class="legal-banner">
+  RESTRICTED // CSIRT INTERNAL // SYNTHETIC TRAINING DATASET // FICTIONAL SIMULATION
+</div>
+
+<main role="main">
+
+<section class="hero" id="hero">
+
+  <div class="hero-bg-lines"></div>
+
+  <div class="hero-content">
+
+    <div class="hero-eyebrow">
+
+      <span class="eyebrow-line"></span>
+
+      <span class="eyebrow-text">
+        INTERNAL SECURITY INCIDENT REPORT
+      </span>
+
+      <span class="eyebrow-line"></span>
+
     </div>
-    <div class="nav-center">
-      <span class="nav-tag">INCIDENT COMMAND — ACTIVE</span>
+
+    <h1 class="hero-title">
+
+      <span class="ht-line1">
+        CYBERSECURITY
+      </span>
+
+      <span class="ht-line2">
+        INCIDENT
+      </span>
+
+      <span class="ht-line3">
+        REPORT
+      </span>
+
+    </h1>
+
+    <div class="hero-platform">
+      VORTEX GAMING NETWORK — SYNTHETIC INCIDENT SIMULATION
     </div>
-    <div class="nav-meta">
-      <span class="nav-badge badge-fictional">◆ FICTIONAL</span>
-      <span class="nav-badge badge-red blink-badge">⚠ BREACH ACTIVE</span>
-      <span class="nav-id">INC-2025-0314-CRIT</span>
+
+    <div class="hero-meta-grid">
+
+      <div class="hero-meta-item">
+        <span class="hm-label">INCIDENT ID</span>
+        <span class="hm-value">INC-2025-0314-CRIT</span>
+      </div>
+
+      <div class="hero-meta-item">
+        <span class="hm-label">BREACH DETECTED</span>
+        <span class="hm-value">MAR 14, 2025 — 03:17 UTC</span>
+      </div>
+
+      <div class="hero-meta-item">
+        <span class="hm-label">THREAT ACTOR</span>
+        <span class="hm-value red-glow">
+          PHANTOM CIRCUIT [FICTIONAL]
+        </span>
+      </div>
+
+      <div class="hero-meta-item">
+        <span class="hm-label">SEVERITY RATING</span>
+        <span class="hm-value red-glow">
+          CRITICAL — SEV-1
+        </span>
+      </div>
+
+      <div class="hero-meta-item">
+        <span class="hm-label">CLASSIFICATION</span>
+        <span class="hm-value">
+          RESTRICTED / CSIRT
+        </span>
+      </div>
+
+      <div class="hero-meta-item">
+        <span class="hm-label">STATUS</span>
+        <span class="hm-value green-text">
+          CONTAINED — MONITORING
+        </span>
+      </div>
+
     </div>
-  </nav>
 
-  <section class="hero" id="hero">
-    <div class="hero-bg-lines"></div>
-    <div class="hero-content">
-      <div class="hero-eyebrow">
-        <span class="eyebrow-line"></span>
-        <span class="eyebrow-text">CLASSIFIED — INTERNAL DISTRIBUTION ONLY — FICTIONAL DOCUMENT</span>
-        <span class="eyebrow-line"></span>
-      </div>
-      <h1 class="hero-title">
-        <span class="ht-line1">CYBERSECURITY</span>
-        <span class="ht-line2">INCIDENT</span>
-        <span class="ht-line3">REPORT</span>
-      </h1>
-      <div class="hero-platform">VORTEX GAMING NETWORK — CRITICAL DATA BREACH — FICTIONAL SIMULATION</div>
-      <div class="hero-meta-grid">
-        <div class="hero-meta-item">
-          <span class="hm-label">INCIDENT ID</span>
-          <span class="hm-value">INC-2025-0314-CRIT</span>
-        </div>
-        <div class="hero-meta-item">
-          <span class="hm-label">BREACH DETECTED</span>
-          <span class="hm-value">MAR 14, 2025 — 03:17 UTC</span>
-        </div>
-        <div class="hero-meta-item">
-          <span class="hm-label">THREAT ACTOR</span>
-          <span class="hm-value red-glow">PHANTOM CIRCUIT [FICTIONAL]</span>
-        </div>
-        <div class="hero-meta-item">
-          <span class="hm-label">SEVERITY RATING</span>
-          <span class="hm-value blink-text red-glow">CRITICAL — SEV-1</span>
-        </div>
-        <div class="hero-meta-item">
-          <span class="hm-label">CLASSIFICATION</span>
-          <span class="hm-value">RESTRICTED / CSIRT</span>
-        </div>
-        <div class="hero-meta-item">
-          <span class="hm-label">STATUS</span>
-          <span class="hm-value green-text">CONTAINED — MONITORING</span>
-        </div>
-      </div>
-      <div class="hero-fictional-notice">
-        <span class="notice-icon">⚠</span>
-        ALL INFORMATION, RECORDS, NAMES, STATISTICS, AND DATA CONTAINED IN THIS REPORT ARE ENTIRELY FICTIONAL AND SYNTHETICALLY GENERATED. THIS DOCUMENT IS A SIMULATION CREATED SOLELY FOR CYBERSECURITY AWARENESS, MOVIE PROP, OR ARG PURPOSES.
-      </div>
+    <div class="hero-fictional-notice">
+
+      <span class="notice-icon">
+        ⚠
+      </span>
+
+      All names, records, statistics, and data shown in this portal are entirely fictional and synthetically generated for cybersecurity awareness, cinematic, educational, and simulation purposes only.
+
     </div>
-    <div class="hero-visual-wrap">
-      <div class="hv-outer-ring r1"></div>
-      <div class="hv-outer-ring r2"></div>
-      <div class="hv-outer-ring r3"></div>
-      <div class="hv-core">
-        <div class="hv-icon">◈</div>
-        <div class="hv-core-label">SYS<br>BREACH</div>
+
+  </div>
+
+  <div class="hero-visual-wrap">
+
+    <div class="hv-outer-ring r1"></div>
+    <div class="hv-outer-ring r2"></div>
+
+    <div class="hv-core">
+
+      <div class="hv-icon">
+        ◈
       </div>
-      <div class="hv-orbit o1"><div class="hv-node n1">DB</div></div>
-      <div class="hv-orbit o2"><div class="hv-node n2">AUTH</div></div>
-      <div class="hv-orbit o3"><div class="hv-node n3">CDN</div></div>
+
+      <div class="hv-core-label">
+        SYS<br>BREACH
+      </div>
+
     </div>
-  </section>
 
-  <section class="stats-section" id="stats">
-    <div class="container">
-      <div class="section-header">
-        <div class="sh-eyebrow">
-          <span class="sh-line"></span>
-          <span class="sh-tag">DAMAGE ASSESSMENT — PRELIMINARY REPORT</span>
-          <span class="sh-line"></span>
-        </div>
-        <h2 class="section-title">BREACH STATISTICS</h2>
-      </div>
-      <div class="stats-grid">
-        <div class="stat-card" data-target="2847293" data-suffix="">
-          <div class="sc-accent"></div>
-          <div class="sc-icon">◉</div>
-          <div class="sc-number" id="stat-0">0</div>
-          <div class="sc-label">ACCOUNTS COMPROMISED</div>
-          <div class="sc-bar"><div class="sc-bar-fill" data-width="94"></div></div>
-          <div class="sc-sub">100% of registered user base</div>
-        </div>
-        <div class="stat-card" data-target="47" data-suffix=" TB">
-          <div class="sc-accent"></div>
-          <div class="sc-icon">◈</div>
-          <div class="sc-number" id="stat-1">0</div>
-          <div class="sc-label">DATA EXFILTRATED</div>
-          <div class="sc-bar"><div class="sc-bar-fill" data-width="78"></div></div>
-          <div class="sc-sub">Across 17 foreign endpoints</div>
-        </div>
-        <div class="stat-card" data-target="23" data-suffix="">
-          <div class="sc-accent"></div>
-          <div class="sc-icon">⬡</div>
-          <div class="sc-number" id="stat-2">0</div>
-          <div class="sc-label">SERVERS BREACHED</div>
-          <div class="sc-bar"><div class="sc-bar-fill" data-width="62"></div></div>
-          <div class="sc-sub">Including 4 production databases</div>
-        </div>
-        <div class="stat-card" data-target="6" data-suffix=" DAYS">
-          <div class="sc-accent"></div>
-          <div class="sc-icon">◇</div>
-          <div class="sc-number" id="stat-3">0</div>
-          <div class="sc-label">UNDETECTED</div>
-          <div class="sc-bar"><div class="sc-bar-fill" data-width="40"></div></div>
-          <div class="sc-sub">Mar 8 – Mar 14, 2025</div>
-        </div>
-      </div>
+    <div class="hv-orbit o1">
+      <div class="hv-node n1">DB</div>
     </div>
-  </section>
 
-  <section class="categories-section" id="categories">
-    <div class="container">
-      <div class="section-header">
-        <div class="sh-eyebrow">
-          <span class="sh-line"></span>
-          <span class="sh-tag">DATA INVENTORY — EXFILTRATION LOG</span>
-          <span class="sh-line"></span>
-        </div>
-        <h2 class="section-title">COMPROMISED DATA CATEGORIES</h2>
-      </div>
-      <div class="categories-grid">
-        <div class="cat-card reveal-card">
-          <div class="cat-top">
-            <span class="cat-icon">⊛</span>
-            <span class="cat-sev sev-critical">CRITICAL</span>
-          </div>
-          <div class="cat-title">CREDENTIALS</div>
-          <div class="cat-desc">Usernames and bcrypt password hash pairs for all registered platform accounts, including legacy accounts.</div>
-          <div class="cat-count">2,847,293 records</div>
-          <div class="cat-prog"><div class="cat-prog-fill cpf-red" data-w="94"></div></div>
-        </div>
-        <div class="cat-card reveal-card">
-          <div class="cat-top">
-            <span class="cat-icon">✉</span>
-            <span class="cat-sev sev-critical">CRITICAL</span>
-          </div>
-          <div class="cat-title">EMAIL ADDRESSES</div>
-          <div class="cat-desc">Primary and recovery email addresses linked to all accounts, including verified and pending verification records.</div>
-          <div class="cat-count">2,847,293 records</div>
-          <div class="cat-prog"><div class="cat-prog-fill cpf-red" data-w="94"></div></div>
-        </div>
-        <div class="cat-card reveal-card">
-          <div class="cat-top">
-            <span class="cat-icon">◈</span>
-            <span class="cat-sev sev-critical">CRITICAL</span>
-          </div>
-          <div class="cat-title">PAYMENT DATA</div>
-          <div class="cat-desc">Partial card numbers (last 4 digits), billing addresses, expiry dates, and 36-month transaction histories.</div>
-          <div class="cat-count">1,203,447 records</div>
-          <div class="cat-prog"><div class="cat-prog-fill cpf-red" data-w="72"></div></div>
-        </div>
-        <div class="cat-card reveal-card">
-          <div class="cat-top">
-            <span class="cat-icon">⬡</span>
-            <span class="cat-sev sev-high">HIGH</span>
-          </div>
-          <div class="cat-title">IP ADDRESS LOGS</div>
-          <div class="cat-desc">Historical connection IP logs covering 36 months of platform access, including timestamps and session durations.</div>
-          <div class="cat-count">89,412,881 records</div>
-          <div class="cat-prog"><div class="cat-prog-fill cpf-orange" data-w="88"></div></div>
-        </div>
-        <div class="cat-card reveal-card">
-          <div class="cat-top">
-            <span class="cat-icon">◎</span>
-            <span class="cat-sev sev-high">HIGH</span>
-          </div>
-          <div class="cat-title">VIRTUAL CURRENCY</div>
-          <div class="cat-desc">VortexCoin balance snapshots, in-game purchase histories, and peer-to-peer transfer ledgers for all accounts.</div>
-          <div class="cat-count">2,847,293 records</div>
-          <div class="cat-prog"><div class="cat-prog-fill cpf-orange" data-w="85"></div></div>
-        </div>
-        <div class="cat-card reveal-card">
-          <div class="cat-top">
-            <span class="cat-icon">⊙</span>
-            <span class="cat-sev sev-high">HIGH</span>
-          </div>
-          <div class="cat-title">PERSONAL DATA</div>
-          <div class="cat-desc">Display names, phone numbers, dates of birth, gender identifiers, and regional preference data tied to accounts.</div>
-          <div class="cat-count">1,984,112 records</div>
-          <div class="cat-prog"><div class="cat-prog-fill cpf-orange" data-w="76"></div></div>
-        </div>
-        <div class="cat-card reveal-card">
-          <div class="cat-top">
-            <span class="cat-icon">⟁</span>
-            <span class="cat-sev sev-medium">MEDIUM</span>
-          </div>
-          <div class="cat-title">SESSION TOKENS</div>
-          <div class="cat-desc">Active and archived JWT authentication tokens, refresh keys, and remembered-device session identifiers.</div>
-          <div class="cat-count">4,129,045 records</div>
-          <div class="cat-prog"><div class="cat-prog-fill cpf-yellow" data-w="55"></div></div>
-        </div>
-        <div class="cat-card reveal-card">
-          <div class="cat-top">
-            <span class="cat-icon">⟐</span>
-            <span class="cat-sev sev-medium">MEDIUM</span>
-          </div>
-          <div class="cat-title">DEVICE FINGERPRINTS</div>
-          <div class="cat-desc">Browser fingerprints, canvas hashes, device IDs, OS identifiers, and hardware signature data collected on login.</div>
-          <div class="cat-count">3,402,917 records</div>
-          <div class="cat-prog"><div class="cat-prog-fill cpf-yellow" data-w="48"></div></div>
-        </div>
-      </div>
+    <div class="hv-orbit o2">
+      <div class="hv-node n2">AUTH</div>
     </div>
-  </section>
 
-  <section class="records-section" id="records">
-    <div class="container">
-      <div class="section-header">
-        <div class="sh-eyebrow">
-          <span class="sh-line"></span>
-          <span class="sh-tag">SAMPLE DATASET — ALL DATA IS SYNTHETIC AND FICTIONAL</span>
-          <span class="sh-line"></span>
-        </div>
-        <h2 class="section-title">SIMULATED USER RECORDS</h2>
-        <p class="section-desc">The following 22 records are entirely fictional. No real individuals are represented. Generated for simulation purposes only.</p>
-      </div>
-      <div class="table-controls">
-        <div class="table-search-wrap">
-          <span class="ts-icon">⌕</span>
-          <input type="text" id="table-search" class="table-search-input" placeholder="FILTER RECORDS BY USERNAME, NAME, OR LOCATION...">
-        </div>
-        <div class="table-count-wrap">
-          SHOWING <span id="record-count">22</span> FICTIONAL RECORDS
-        </div>
-      </div>
-      <div class="table-outer">
-        <table class="breach-table" id="breach-table">
-          <thead>
-            <tr>
-              <th>USER ID</th>
-              <th>USERNAME</th>
-              <th>DISPLAY NAME</th>
-              <th>EMAIL [FICTIONAL]</th>
-              <th>LOCATION</th>
-              <th>VC BALANCE</th>
-              <th>LAST LOGIN</th>
-              <th>AGE</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody id="table-body"></tbody>
-        </table>
-      </div>
-    </div>
-  </section>
+  </div>
 
-  <section class="timeline-section" id="timeline">
-    <div class="container">
-      <div class="section-header">
-        <div class="sh-eyebrow">
-          <span class="sh-line"></span>
-          <span class="sh-tag">ATTACK RECONSTRUCTION — FORENSIC TIMELINE</span>
-          <span class="sh-line"></span>
-        </div>
-        <h2 class="section-title">BREACH TIMELINE</h2>
-      </div>
-      <div class="timeline" id="timeline-list">
-        <div class="tl-spine"></div>
+</section>
 
-        <div class="tl-item reveal-tl" data-color="blue">
-          <div class="tl-dot dot-blue"></div>
-          <div class="tl-date">MAR 08, 2025 — 14:22 UTC</div>
-          <div class="tl-card">
-            <div class="tl-tag tag-recon">RECONNAISSANCE</div>
-            <div class="tl-event">INITIAL PERIMETER PROBING</div>
-            <div class="tl-detail">Automated scanners detected irregular probing against authentication API endpoints. 47,000 structured requests originating from 312 rotating proxy addresses. Rate limiting systems failed to trigger due to a misconfigured WAF threshold set 6x above optimal. Zero alerts raised internally.</div>
-          </div>
-        </div>
+<section class="stats-section" id="stats">
 
-        <div class="tl-item reveal-tl" data-color="orange">
-          <div class="tl-dot dot-orange"></div>
-          <div class="tl-date">MAR 09, 2025 — 02:11 UTC</div>
-          <div class="tl-card">
-            <div class="tl-tag tag-intrusion">INTRUSION</div>
-            <div class="tl-event">CREDENTIAL STUFFING — PHASE I</div>
-            <div class="tl-detail">Leveraging a corpus of 12M credential pairs from prior unrelated fictional breaches, the threat actor achieved a 3.2% success rate during off-peak hours. Approximately 384,000 accounts compromised in the initial wave. Automated account-takeover scripts ran silently with no SIEM correlation rules triggered.</div>
-          </div>
-        </div>
+<div class="container">
 
-        <div class="tl-item reveal-tl" data-color="red">
-          <div class="tl-dot dot-red"></div>
-          <div class="tl-date">MAR 10, 2025 — 09:44 UTC</div>
-          <div class="tl-card">
-            <div class="tl-tag tag-escalation">ESCALATION</div>
-            <div class="tl-event">PRIVILEGE ESCALATION VIA ZERO-DAY</div>
-            <div class="tl-detail">Exploitation of CVE-FICTIONAL-7731, a critical SQL injection vulnerability in the internal admin portal's reporting module. Attacker achieved database administrator privileges within 22 minutes. Three encrypted reverse shell sessions established with C2 infrastructure, appearing as routine HTTPS traffic on port 8443.</div>
-          </div>
-        </div>
+<div class="section-header">
 
-        <div class="tl-item reveal-tl" data-color="red">
-          <div class="tl-dot dot-red"></div>
-          <div class="tl-date">MAR 11–13, 2025 — 72 HOURS</div>
-          <div class="tl-card">
-            <div class="tl-tag tag-exfil">EXFILTRATION</div>
-            <div class="tl-event">LATERAL MOVEMENT & DATA STAGING</div>
-            <div class="tl-detail">Using compromised admin credentials, the threat actor traversed 23 internal servers across three network segments. Data staged in AES-256 encrypted archives on a compromised CDN node. 47TB exfiltrated over 72 hours via HTTPS to 17 foreign endpoints, disguised as routine CDN cache update traffic averaging 2.3 GB/min.</div>
-          </div>
-        </div>
+<div class="sh-eyebrow">
 
-        <div class="tl-item reveal-tl" data-color="yellow">
-          <div class="tl-dot dot-yellow"></div>
-          <div class="tl-date">MAR 14, 2025 — 03:17 UTC</div>
-          <div class="tl-card">
-            <div class="tl-tag tag-disclosure">DISCLOSURE</div>
-            <div class="tl-event">PUBLIC BREACH ANNOUNCEMENT</div>
-            <div class="tl-detail">Threat actor published encrypted sample datasets on three dark web forums alongside a ransom demand of 340 BTC payable within 72 hours. Internal Vortex security team detected the exposure via an external threat intelligence feed 14 minutes after initial publication. Emergency incident response protocol activated.</div>
-          </div>
-        </div>
+<span class="sh-line"></span>
 
-        <div class="tl-item reveal-tl" data-color="green">
-          <div class="tl-dot dot-green"></div>
-          <div class="tl-date">MAR 14, 2025 — 05:00 UTC</div>
-          <div class="tl-card">
-            <div class="tl-tag tag-response">CONTAINMENT</div>
-            <div class="tl-event">CONTAINMENT AND RESPONSE INITIATED</div>
-            <div class="tl-detail">Emergency incident response team activated. All external database connections terminated. Three backdoor sessions severed. Network segments isolated. Global force-password-reset initiated across all 2,847,293 accounts. Regulatory authorities notified per applicable data protection legislation. Digital forensic preservation commenced.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<span class="sh-tag">
+DAMAGE ASSESSMENT — PRELIMINARY REPORT
+</span>
 
-  <section class="threat-section" id="threat">
-    <div class="container">
-      <div class="section-header">
-        <div class="sh-eyebrow">
-          <span class="sh-line"></span>
-          <span class="sh-tag">INTERCEPTED THREAT ACTOR COMMUNICATION — FICTIONAL</span>
-          <span class="sh-line"></span>
-        </div>
-        <h2 class="section-title">DECRYPTED RANSOM MESSAGE</h2>
-      </div>
-      <div class="terminal-frame">
-        <div class="tf-titlebar">
-          <div class="tf-dots">
-            <span class="tfd tfd-r"></span>
-            <span class="tfd tfd-y"></span>
-            <span class="tfd tfd-g"></span>
-          </div>
-          <span class="tf-title">PHANTOM_CIRCUIT :: BROADCAST :: ENCRYPTED_CHANNEL_7 :: [FICTIONAL]</span>
-          <span class="tf-status red-text blink-text">● LIVE</span>
-        </div>
-        <div class="tf-body">
-          <div class="tf-line"><span class="tf-prompt">$</span><span class="tf-cmd"> decrypt --source=channel7.onion --key=phantom_a7 --output=stdout</span></div>
-          <div class="tf-line tf-output">[✓] KEY VERIFIED — [✓] SOURCE AUTHENTICATED — [✓] DECRYPTION COMPLETE</div>
-          <div class="tf-line tf-output">[→] RENDERING PLAINTEXT MESSAGE BELOW:</div>
-          <div class="tf-divider">─────────────────────────────────────────────────────────────</div>
-          <div class="tf-message" id="terminal-message"></div>
-          <span class="tf-cursor" id="terminal-cursor">█</span>
-          <div class="tf-divider" id="tf-divider-end" style="display:none">─────────────────────────────────────────────────────────────</div>
-          <div class="tf-line tf-footer" id="tf-footer" style="display:none">[END TRANSMISSION] — SOURCE: PHANTOM_CIRCUIT — TIMESTAMP: 2025-03-14T03:17:42Z</div>
-        </div>
-      </div>
-    </div>
-  </section>
+<span class="sh-line"></span>
 
-  <section class="warning-section" id="warning">
-    <div class="container">
-      <div class="warning-header-row">
-        <div class="warn-icon-large">
-          <span class="wil-symbol">⚠</span>
-          <div class="wil-rings">
-            <span class="wil-ring wr1"></span>
-            <span class="wil-ring wr2"></span>
-          </div>
-        </div>
-        <div>
-          <h2 class="warn-main-title">ACTIVE THREAT INDICATORS</h2>
-          <div class="warn-main-sub">REAL-TIME SECURITY ALERT DASHBOARD — FICTIONAL SIMULATION</div>
-        </div>
-      </div>
+</div>
 
-      <div class="warnings-grid">
-        <div class="warn-card wc-critical">
-          <div class="warn-pulse-dot"></div>
-          <div class="wc-icon-col">🔴</div>
-          <div class="wc-body">
-            <div class="wc-title">DATABASE EXFILTRATION ACTIVE</div>
-            <div class="wc-desc">Outbound data transfer confirmed on port 443 to 17 foreign endpoints. Peak throughput recorded at 2.3 GB/min. Encryption masks content as CDN cache traffic.</div>
-          </div>
-        </div>
-        <div class="warn-card wc-critical">
-          <div class="warn-pulse-dot"></div>
-          <div class="wc-icon-col">🔴</div>
-          <div class="wc-body">
-            <div class="wc-title">ADMIN CREDENTIALS COMPROMISED</div>
-            <div class="wc-desc">3 of 7 administrator accounts showing anomalous concurrent sessions from geographically impossible login pairs within 4-minute windows.</div>
-          </div>
-        </div>
-        <div class="warn-card wc-high">
-          <div class="wc-icon-col">🟠</div>
-          <div class="wc-body">
-            <div class="wc-title">BACKDOOR SESSIONS DETECTED</div>
-            <div class="wc-desc">Persistent reverse shells identified on DB-PROD-07, DB-PROD-11, AUTH-SRV-03. Sessions active for 72+ hours prior to discovery. All now terminated.</div>
-          </div>
-        </div>
-        <div class="warn-card wc-high">
-          <div class="wc-icon-col">🟠</div>
-          <div class="wc-body">
-            <div class="wc-title">340 BTC RANSOM DEMAND RECEIVED</div>
-            <div class="wc-desc">Payment demanded within 72-hour countdown. Non-compliance threat includes public release of full dataset including payment and credential records.</div>
-          </div>
-        </div>
-        <div class="warn-card wc-medium">
-          <div class="wc-icon-col">🟡</div>
-          <div class="wc-body">
-            <div class="wc-title">DARK WEB EXPOSURE CONFIRMED</div>
-            <div class="wc-desc">Sample dataset of 50,000 fictional records already circulating across 3 dark web marketplaces and 2 private threat actor forums as proof-of-breach.</div>
-          </div>
-        </div>
-        <div class="warn-card wc-medium">
-          <div class="wc-icon-col">🟡</div>
-          <div class="wc-body">
-            <div class="wc-title">MEDIA EXPOSURE IMMINENT</div>
-            <div class="wc-desc">Nine journalists have contacted the PR department. Voluntary embargo expires in under 4 hours. Crisis communications and legal counsel fully engaged.</div>
-          </div>
-        </div>
-      </div>
+<h2 class="section-title">
+BREACH STATISTICS
+</h2>
 
-      <div class="exfil-monitor">
-        <div class="em-header">
-          <span class="em-live-dot"></span>
-          <span class="em-title">SIMULATED EXFILTRATION FEED — LIVE MONITOR</span>
-          <span class="em-badge">[FICTIONAL — DEMONSTRATION ONLY]</span>
-        </div>
-        <div class="em-transfers" id="em-transfers">
-          <div class="em-row">
-            <div class="em-filename">USER_CREDENTIALS_FULL.tar.gz.enc</div>
-            <div class="em-bar-wrap"><div class="em-bar-fill" id="emf-0"></div></div>
-            <div class="em-pct" id="emp-0">0%</div>
-            <div class="em-status blink-text red-text" id="ems-0">TRANSMITTING</div>
-          </div>
-          <div class="em-row">
-            <div class="em-filename">PAYMENT_DATA_PARTIAL.bin.enc</div>
-            <div class="em-bar-wrap"><div class="em-bar-fill" id="emf-1"></div></div>
-            <div class="em-pct" id="emp-1">0%</div>
-            <div class="em-status blink-text red-text" id="ems-1">TRANSMITTING</div>
-          </div>
-          <div class="em-row">
-            <div class="em-filename">SESSION_TOKENS_SNAPSHOT.db.enc</div>
-            <div class="em-bar-wrap"><div class="em-bar-fill" id="emf-2"></div></div>
-            <div class="em-pct" id="emp-2">0%</div>
-            <div class="em-status blink-text orange-text" id="ems-2">TRANSMITTING</div>
-          </div>
-          <div class="em-row">
-            <div class="em-filename">PERSONAL_DATA_ALL_REGIONS.json.enc</div>
-            <div class="em-bar-wrap"><div class="em-bar-fill" id="emf-3"></div></div>
-            <div class="em-pct" id="emp-3">0%</div>
-            <div class="em-status blink-text orange-text" id="ems-3">INITIALIZING</div>
-          </div>
-          <div class="em-row">
-            <div class="em-filename">IP_LOG_ARCHIVE_36M.log.enc</div>
-            <div class="em-bar-wrap"><div class="em-bar-fill" id="emf-4"></div></div>
-            <div class="em-pct" id="emp-4">0%</div>
-            <div class="em-status blink-text yellow-text" id="ems-4">QUEUED</div>
-          </div>
-        </div>
-        <div class="em-totals">
-          <span>TOTAL TRANSMITTED: <span class="red-text" id="em-total">0 GB</span></span>
-          <span>ACTIVE ENDPOINTS: <span class="red-text">17</span></span>
-          <span>ENCRYPTION: <span class="green-text">AES-256-GCM</span></span>
-          <span>DETECTION: <span class="red-text blink-text">BYPASSED</span></span>
-        </div>
-      </div>
-    </div>
-  </section>
+</div>
 
-  <section class="response-section" id="response">
-    <div class="container">
-      <div class="section-header">
-        <div class="sh-eyebrow">
-          <span class="sh-line"></span>
-          <span class="sh-tag">SECURITY OPERATIONS CENTER — CSIRT RESPONSE</span>
-          <span class="sh-line"></span>
-        </div>
-        <h2 class="section-title">INCIDENT RESPONSE STATUS</h2>
-      </div>
-      <div class="response-grid">
-        <div class="resp-item ri-done">
-          <div class="ri-marker"><span class="ri-check">✓</span></div>
-          <div class="ri-body">
-            <div class="ri-title">BREACH CONTAINED</div>
-            <div class="ri-desc">All external database connections severed. Backdoor sessions terminated. Network segments isolated. Emergency firewall rules applied across all production tiers.</div>
-            <div class="ri-timestamp">MAR 14, 2025 — 05:14 UTC — COMPLETED</div>
-          </div>
-        </div>
-        <div class="resp-item ri-done">
-          <div class="ri-marker"><span class="ri-check">✓</span></div>
-          <div class="ri-body">
-            <div class="ri-title">GLOBAL PASSWORD RESET</div>
-            <div class="ri-desc">Force-reset executed across all 2,847,293 accounts. 2FA re-enrollment mandatory on next authentication for all user tiers including admin and API accounts.</div>
-            <div class="ri-timestamp">MAR 14, 2025 — 06:30 UTC — COMPLETED</div>
-          </div>
-        </div>
-        <div class="resp-item ri-progress">
-          <div class="ri-marker"><span class="ri-spin">⟳</span></div>
-          <div class="ri-body">
-            <div class="ri-title">FORENSIC INVESTIGATION</div>
-            <div class="ri-desc">Digital forensics team analyzing 47TB of system, network, and application logs. Full attack chain reconstructed. CVE-FICTIONAL-7731 patch deployed to all servers.</div>
-            <div class="ri-timestamp">IN PROGRESS — ESTIMATED COMPLETION 72 HRS</div>
-            <div class="ri-prog-bar"><div class="ri-prog-fill" style="width:65%"></div></div>
-          </div>
-        </div>
-        <div class="resp-item ri-progress">
-          <div class="ri-marker"><span class="ri-spin">⟳</span></div>
-          <div class="ri-body">
-            <div class="ri-title">USER NOTIFICATION CAMPAIGN</div>
-            <div class="ri-desc">Mass breach notification email dispatched to all affected fictional users. Regulatory disclosure filings submitted to 14 jurisdictions per applicable data protection statutes.</div>
-            <div class="ri-timestamp">IN PROGRESS — 34% COMPLETE</div>
-            <div class="ri-prog-bar"><div class="ri-prog-fill" style="width:34%"></div></div>
-          </div>
-        </div>
-        <div class="resp-item ri-pending">
-          <div class="ri-marker"><span class="ri-open">○</span></div>
-          <div class="ri-body">
-            <div class="ri-title">LAW ENFORCEMENT COORDINATION</div>
-            <div class="ri-desc">Active cooperation with fictional cybercrime investigative units. Chain-of-custody preserved for all digital evidence. Attribution investigation ongoing. No payment to threat actors.</div>
-            <div class="ri-timestamp">PENDING — COORDINATION PHASE</div>
-          </div>
-        </div>
-        <div class="resp-item ri-pending">
-          <div class="ri-marker"><span class="ri-open">○</span></div>
-          <div class="ri-body">
-            <div class="ri-title">ZERO-TRUST ARCHITECTURE REBUILD</div>
-            <div class="ri-desc">Full database re-encryption with new key material. Zero-trust network architecture implementation. Enhanced 24/7 SOC monitoring across all production and staging environments.</div>
-            <div class="ri-timestamp">PENDING — SCHEDULED Q2 2025</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<div class="stats-grid">
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-top">
-        <div class="ft-logo">◈ VORTEX<span class="red-text">SEC</span></div>
-        <div class="ft-id">INCIDENT REPORT v2.1 — INC-2025-0314-CRIT</div>
-      </div>
-      <div class="footer-disclaimer-box">
-        <div class="fdb-title">⚠ LEGAL DISCLAIMER — PLEASE READ</div>
-        <p class="fdb-text">THIS ENTIRE WEBSITE, INCLUDING ALL DATA, NAMES, EMAIL ADDRESSES, PASSWORD HASHES, PHONE NUMBERS, IP ADDRESSES, USER RECORDS, BREACH STATISTICS, THREAT ACTOR INFORMATION, CORPORATE REFERENCES, AND INCIDENT DETAILS IS ENTIRELY FICTIONAL AND HAS BEEN SYNTHETICALLY GENERATED FOR EDUCATIONAL, SIMULATION, AND CYBERSECURITY AWARENESS PURPOSES ONLY.</p>
-        <p class="fdb-text">NO REAL INDIVIDUALS, COMPANIES, GAMING PLATFORMS, ORGANIZATIONS, OR GROUPS ARE REPRESENTED OR IMPERSONATED. "VORTEX GAMING NETWORK", "PHANTOM CIRCUIT", AND ALL OTHER NAMED ENTITIES ARE WHOLLY FICTIONAL CONSTRUCTS. NO ACTUAL SECURITY BREACH HAS OCCURRED. ALL TECHNICAL SPECIFICATIONS, VULNERABILITIES, AND FINANCIAL FIGURES ARE SIMULATED.</p>
-        <p class="fdb-text">THIS PROJECT IS INTENDED SOLELY AS A MOVIE PROP, ALTERNATE REALITY GAME (ARG) ASSET, OR CYBERSECURITY AWARENESS DEMONSTRATION TOOL. ANY RESEMBLANCE TO REAL EVENTS, PERSONS, OR ORGANIZATIONS IS ENTIRELY COINCIDENTAL.</p>
-      </div>
-      <div class="footer-bottom">
-        <span>FICTIONAL SIMULATION — ALL RIGHTS RESERVED</span>
-        <span>INC-2025-0314-CRIT [FICTIONAL]</span>
-        <span>CYBERSECURITY AWARENESS PROJECT — 2025</span>
-      </div>
-    </div>
-  </footer>
+<div class="stat-card" data-target="2847293">
+
+<div class="sc-accent"></div>
+
+<div class="sc-icon">
+◉
+</div>
+
+<div class="sc-number" id="stat-0">
+0
+</div>
+
+<div class="sc-label">
+ACCOUNTS COMPROMISED
+</div>
+
+<div class="sc-bar">
+<div class="sc-bar-fill" data-width="94"></div>
+</div>
+
+<div class="sc-sub">
+Estimated 93.4% account exposure
+</div>
+
+</div>
+
+<div class="stat-card" data-target="47" data-suffix=" TB">
+
+<div class="sc-accent"></div>
+
+<div class="sc-icon">
+◈
+</div>
+
+<div class="sc-number" id="stat-1">
+0
+</div>
+
+<div class="sc-label">
+DATA EXFILTRATED
+</div>
+
+<div class="sc-bar">
+<div class="sc-bar-fill" data-width="78"></div>
+</div>
+
+<div class="sc-sub">
+Across 17 foreign endpoints
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="records-section" id="records">
+
+<div class="container">
+
+<div class="section-header">
+
+<div class="sh-eyebrow">
+
+<span class="sh-line"></span>
+
+<span class="sh-tag">
+SYNTHETIC DATASET — FICTIONAL USERS
+</span>
+
+<span class="sh-line"></span>
+
+</div>
+
+<h2 class="section-title">
+SIMULATED USER RECORDS
+</h2>
+
+<p class="section-desc">
+The following records are entirely fictional and generated for demonstration purposes only.
+</p>
+
+</div>
+
+<div class="table-controls">
+
+<div class="table-search-wrap">
+
+<span class="ts-icon">
+⌕
+</span>
+
+<input
+type="text"
+id="table-search"
+class="table-search-input"
+placeholder="FILTER RECORDS..."
+>
+
+</div>
+
+<div class="table-count-wrap">
+SHOWING <span id="record-count">22</span> SYNTHETIC RECORDS
+</div>
+
+</div>
+
+<div class="table-scroll">
+
+<div class="table-outer">
+
+<table class="breach-table" id="breach-table">
+
+<thead>
+
+<tr>
+<th>USER ID</th>
+<th>USERNAME</th>
+<th>DISPLAY NAME</th>
+<th>EMAIL</th>
+<th>LOCATION</th>
+<th>VC BALANCE</th>
+<th>LAST LOGIN</th>
+<th>AGE</th>
+<th></th>
+</tr>
+
+</thead>
+
+<tbody id="table-body"></tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="threat-section" id="threat">
+
+<div class="container">
+
+<div class="section-header">
+
+<div class="sh-eyebrow">
+
+<span class="sh-line"></span>
+
+<span class="sh-tag">
+INTERCEPTED THREAT COMMUNICATION — SYNTHETIC
+</span>
+
+<span class="sh-line"></span>
+
+</div>
+
+<h2 class="section-title">
+DECRYPTED MESSAGE
+</h2>
+
+</div>
+
+<div class="terminal-frame">
+
+<div class="tf-titlebar">
+
+<div class="tf-dots">
+
+<span class="tfd tfd-r"></span>
+<span class="tfd tfd-y"></span>
+<span class="tfd tfd-g"></span>
+
+</div>
+
+<span class="tf-title">
+PHANTOM_CIRCUIT :: ENCRYPTED_CHANNEL_7
+</span>
+
+<span class="tf-status red-text">
+● LIVE
+</span>
+
+</div>
+
+<div class="tf-body">
+
+<div class="tf-line">
+<span class="tf-prompt">$</span>
+<span class="tf-cmd">
+decrypt --source=channel7.onion
+</span>
+</div>
+
+<div class="tf-divider">
+────────────────────────────────────────────
+</div>
+
+<pre class="tf-message" id="terminal-message"></pre>
+
+<span class="tf-cursor" id="terminal-cursor">
+█
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<footer class="site-footer" role="contentinfo">
+
+<div class="container">
+
+<div class="footer-top">
+
+<div class="ft-logo">
+◈ VORTEX<span class="red-text">SEC</span>
+</div>
+
+<div class="ft-id">
+INCIDENT REPORT v2.1 — INC-2025-0314-CRIT
+</div>
+
+</div>
+
+<div class="footer-disclaimer-box">
+
+<div class="fdb-title">
+LEGAL DISCLAIMER
+</div>
+
+<p class="fdb-text">
+This website, including all records, names, emails, statistics, user data, and breach details, is entirely fictional and synthetically generated.
+</p>
+
+<p class="fdb-text">
+No real individuals, organizations, gaming platforms, or cybersecurity groups are represented or impersonated.
+</p>
+
+<p class="fdb-text">
+Created solely for cybersecurity awareness, cinematic production, simulation, and educational purposes.
+</p>
+
+</div>
+
+<div class="footer-build">
+BUILD 2.14.77 • GENERATED APR 2025 • INTERNAL CSIRT PORTAL
+</div>
+
+<div class="footer-bottom">
+
+<span>
+FICTIONAL SIMULATION
+</span>
+
+<span>
+INC-2025-0314-CRIT
+</span>
+
+<span>
+CYBERSECURITY AWARENESS PROJECT
+</span>
+
+</div>
+
+</div>
+
+</footer>
 
 </div>
 
 <script src="script.js"></script>
+
 </body>
 </html>
