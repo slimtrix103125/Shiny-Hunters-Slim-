@@ -1,0 +1,129 @@
+:root {
+  --bg: #0a0a0a;
+  --accent: #ff0033;
+  --glass: rgba(20, 20, 30, 0.85);
+  --text: #e0e0e0;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Courier New', monospace;
+  overflow-x: hidden;
+}
+
+.scanline {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(transparent, rgba(255,0,51,0.03), transparent);
+  pointer-events: none;
+  animation: scan 4s linear infinite;
+  z-index: 9999;
+}
+
+@keyframes scan { 0% { transform: translateY(-100%); } 100% { transform: translateY(100%); } }
+
+header {
+  text-align: center;
+  padding: 60px 20px 40px;
+  background: linear-gradient(180deg, #1a0000, #0a0a0a);
+  border-bottom: 1px solid var(--accent);
+}
+
+h1 {
+  font-size: 3.2rem;
+  letter-spacing: 4px;
+  color: white;
+}
+
+.red { color: var(--accent); }
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  background: #111;
+  border-bottom: 1px solid #333;
+  flex-wrap: wrap;
+}
+
+.tab {
+  padding: 16px 32px;
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.tab.active {
+  color: var(--accent);
+  border-bottom: 3px solid var(--accent);
+}
+
+.glass-card {
+  background: var(--glass);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,51,51,0.2);
+  border-radius: 12px;
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 1100px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: 30px auto;
+}
+
+.stat-item {
+  background: var(--glass);
+  border: 1px solid rgba(255,51,51,0.3);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.stat-item h3 {
+  font-size: 2.4rem;
+  color: var(--accent);
+}
+
+.table-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #111;
+}
+
+th, td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #222;
+  text-align: left;
+}
+
+th {
+  background: #1a0000;
+  color: var(--accent);
+}
+
+.timeline {
+  max-width: 900px;
+  margin: 40px auto;
+  position: relative;
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  color: #555;
+  font-size: 0.9rem;
+}
