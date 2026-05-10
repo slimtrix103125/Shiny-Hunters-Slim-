@@ -1,6 +1,8 @@
 const body = document.body;
 const app = document.getElementById('app');
 const loadingScreen = document.getElementById('loading-screen');
+const warningModal = document.getElementById('warning-modal');
+const warningButton = document.getElementById('warning-button');
 const loadBar = document.getElementById('load-bar');
 const loadStatus = document.getElementById('load-status');
 const loadHex = document.getElementById('load-hex');
@@ -22,6 +24,46 @@ let msgIndex = 0;
 window.addEventListener('error', (e) => {
   console.log('SCRIPT ERROR:', e.message);
 });
+
+function proceedToMain(){
+  if(warningModal){
+    warningModal.classList.add('hidden');
+  }
+
+  if(app){
+    app.classList.remove('hidden');
+  }
+
+  body.classList.remove('loading');
+
+  try{
+    initializeAnimations();
+  }catch(e){
+    console.log(e);
+  }
+
+  try{
+    startTerminalTyping();
+  }catch(e){
+    console.log(e);
+  }
+
+  try{
+    startExfiltrationFeed();
+  }catch(e){
+    console.log(e);
+  }
+
+  try{
+    startCounters();
+  }catch(e){
+    console.log(e);
+  }
+}
+
+if(warningButton){
+  warningButton.addEventListener('click', proceedToMain);
+}
 
 function randomHex(length = 24){
   const chars = 'ABCDEF0123456789';
@@ -66,35 +108,11 @@ const loadingInterval = setInterval(() => {
           loadingScreen.remove();
         }
 
-        if(app){
-          app.classList.remove('hidden');
+        if(warningModal){
+          warningModal.classList.remove('hidden');
         }
 
         body.classList.remove('loading');
-
-        try{
-          initializeAnimations();
-        }catch(e){
-          console.log(e);
-        }
-
-        try{
-          startTerminalTyping();
-        }catch(e){
-          console.log(e);
-        }
-
-        try{
-          startExfiltrationFeed();
-        }catch(e){
-          console.log(e);
-        }
-
-        try{
-          startCounters();
-        }catch(e){
-          console.log(e);
-        }
 
       },800);
 
@@ -415,11 +433,19 @@ setTimeout(() => {
     loader.style.display = 'none';
   }
 
+  const modal = document.getElementById('warning-modal');
+
+  if(modal){
+    modal.classList.add('hidden');
+  }
+
   if(app){
     app.classList.remove('hidden');
   }
 
   body.classList.remove('loading');
+
+  proceedToMain();
 
 },10000);
 
