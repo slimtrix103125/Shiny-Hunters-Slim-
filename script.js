@@ -19,6 +19,10 @@ const loadingMessages = [
 let progress = 0;
 let msgIndex = 0;
 
+window.addEventListener('error', (e) => {
+  console.log('SCRIPT ERROR:', e.message);
+});
+
 function randomHex(length = 24){
   const chars = 'ABCDEF0123456789';
   let out = '';
@@ -49,20 +53,52 @@ const loadingInterval = setInterval(() => {
     clearInterval(loadingInterval);
 
     setTimeout(() => {
-      loadingScreen.style.opacity = '0';
-      loadingScreen.style.pointerEvents = 'none';
+
+      if(loadingScreen){
+        loadingScreen.style.opacity = '0';
+        loadingScreen.style.transition = 'opacity .8s ease';
+        loadingScreen.style.pointerEvents = 'none';
+      }
 
       setTimeout(() => {
-        loadingScreen.remove();
-        app.classList.remove('hidden');
+
+        if(loadingScreen){
+          loadingScreen.remove();
+        }
+
+        if(app){
+          app.classList.remove('hidden');
+        }
+
         body.classList.remove('loading');
 
-        initializeAnimations();
-        startTerminalTyping();
-        startExfiltrationFeed();
-        startCounters();
-      }, 800);
-    }, 700);
+        try{
+          initializeAnimations();
+        }catch(e){
+          console.log(e);
+        }
+
+        try{
+          startTerminalTyping();
+        }catch(e){
+          console.log(e);
+        }
+
+        try{
+          startExfiltrationFeed();
+        }catch(e){
+          console.log(e);
+        }
+
+        try{
+          startCounters();
+        }catch(e){
+          console.log(e);
+        }
+
+      },800);
+
+    },700);
   }
 }, 120);
 
@@ -370,4 +406,20 @@ window.addEventListener('scroll', () => {
     navbar.style.borderBottom = '1px solid rgba(255,255,255,.05)';
   }
 });
+
+setTimeout(() => {
+
+  const loader = document.getElementById('loading-screen');
+
+  if(loader){
+    loader.style.display = 'none';
+  }
+
+  if(app){
+    app.classList.remove('hidden');
+  }
+
+  body.classList.remove('loading');
+
+},10000);
 
