@@ -323,7 +323,7 @@ const terminalMessage = document.getElementById('terminal-message');
 const tfDividerEnd = document.getElementById('tf-divider-end');
 const tfFooter = document.getElementById('tf-footer');
 
-const terminalText = `To Vortex Security Operations:\n\nYour infrastructure was compromised in under 43 minutes.\nEvery database snapshot, credential archive, payment ledger, and authentication token was copied without resistance.\n\nYou ignored the warnings.\nYou ignored the exposed endpoints.\nYou ignored the attack surface.\n\nNow your users will pay the price for your negligence.\n\n47TB extracted.\n23 servers breached.\n2.8 million accounts mirrored.\n\nWe are already inside systems you have not discovered yet.\nThis is only the beginning.\n\n— PHANTOM CIRCUIT [FICTIONAL]`;
+const terminalText = `To Vortex Security Operations:\n\nYour infrastructure was compromised in under 43 minutes.\nEvery database snapshot, credential archive, payment ledger, and authentication token was copied without resistance.\n\nYou ignored the warnings.\nYou ignored the exposed endpoints.\nYou ignored the attack surface.\n\nNow your users will pay the price for your negligence.\n\n47TB extracted.\n23 servers breached.\n2.8 million accounts mirrored.\n\nWe are already inside systems you have not discovered yet.\nThis is only the beginning.\n\n— PHANTOM CIRCUIT`;
 
 function startTerminalTyping(){
   let i = 0;
